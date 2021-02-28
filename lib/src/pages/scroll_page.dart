@@ -71,8 +71,25 @@ class ScrollPage extends StatelessWidget {
 // Comienza Pagina 2
 
   Widget _pagina2() {
-    return Center(
-      child: Text('Pagina2'),
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Color.fromRGBO(108, 192, 218, 1),
+      child: Center(
+        child: RaisedButton(
+          shape: StadiumBorder(),
+          color: Colors.blue,
+          textColor: Colors.white,
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 15.0),
+            child: Text(
+              "Bienvenidos",
+              style: TextStyle(fontSize: 20.0),
+            ),
+          ),
+          onPressed: () {},
+        ),
+      ),
     );
   }
 }
